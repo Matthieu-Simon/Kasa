@@ -1,7 +1,12 @@
+import { Banner } from "../components/Banner";
+
 export const About = () => {
     return (
-        <div>
-            About
+        <div className="main-content">
+            <Banner />
+            <div className="collapse">
+
+            </div>
         </div>
     )
 };
