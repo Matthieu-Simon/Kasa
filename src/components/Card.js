@@ -1,27 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import jsonData from '../data/data.json';
 
 export const Card = () => {
-    const [data, setData] = useState([]);
-    
-    useEffect(() => {
-        fetch('/kasa/src/data/data.json')
-        .then(response => response.json())
-        .then(data => {
-            setData(data);
-        })
-        .catch(error => {
-            console.error('Erreur lors du chargement des données JSON :', error);
-        });
-    }, []);
+    const data = jsonData.map(item => ({
+        id: item.id,
+        title: item.title,
+        cover: item.cover,
+    }));
 
     return (
-        <div className="location-content">
-        {data.map((location) => (
-            <div key={location.id} className="">
-                <img src={location.cover} alt={location.title} className="img-location" />
-                <h3 className="title-location">{location.title}</h3>
-            </div> 
+        <div>
+        {data.map((item, index) => (
+            <div key={index} className="card-content">
+                <img src={item.cover} alt={item.title} className="img-card" />
+                <h3 className="title-card">{item.title}</h3>
+            </div>
         ))}
         </div>
-    ) 
+    )
 }
