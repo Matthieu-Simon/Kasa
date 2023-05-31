@@ -1,13 +1,26 @@
+import { useLocation } from "react-router-dom";
+import './Banner.css';
 import ImageAccueil from '../medias/images/Banner/Photo-Accueil.jpg';
-// import ImageAPropos from '../medias/images/Photo-APropos.jpg';
+import ImageABout from '../medias/images/Banner/Photo-Montagne.png';
 
 
 export const Banner = () => {
+    const location = useLocation();
+
     return (
-        // A modifier pour changer de photo et retirer le H2 quand on switch sur la page About
         <div className="banner-content">
-            <img src={ImageAccueil} alt="Paysage Mer" className="img-banner" />
-            <h2 className="title-banner">Chez vous, partout et ailleurs</h2>
-        </div>
+        {location.pathname === '/' ? (
+            <div>
+                <img className="img-banner-accueil" src={ImageAccueil} alt="Paysage Falaise" />
+                <p className="title-banner">Chez vous, partout et ailleurs</p>
+            </div>
+          
+        ) : (
+            <img className="img-banner-about" src={ImageABout} alt="Paysage Montagne" />
+        )}
+      </div>
+        
     )
 };
+
+

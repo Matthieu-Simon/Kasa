@@ -1,3 +1,4 @@
+import './ErrorPage.css';
 import { Link } from 'react-router-dom';
 
 export const Error = () => {
@@ -9,7 +10,7 @@ export const Error = () => {
                     Oups! La page que vous demandez n'existe pas.
                 </p>
             </div>
-            <Link to="/" className="error-link">
+            <Link to="/" className="link-decoration">
                 Retourner sur la page d'accueil
             </Link>
         </div>

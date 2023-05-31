@@ -1,0 +1,34 @@
+.collapse-content {
+    height: 100vh;
+}
+.collapse {
+    width: 90%;
+    margin: 20px auto;
+}
+.accordion, .panel {
+    width: 100%;
+    border-radius: 5px;
+}
+.accordion {
+    height: 30px;
+    background: var(--primary-color);
+    color: var(--tertiary-color);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.panel {
+    height: 200px;
+    background: var(--background-collapse);
+    color: var(--primary-color);
+    margin-bottom: 25px;
+
+    /* max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out; */
+}
+.collapse-text {
+    margin: 0;
+    padding: 15px;
+}
