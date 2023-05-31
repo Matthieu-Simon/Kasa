@@ -170,6 +170,7 @@ a:-webkit-any-link {
 }
 .error-link {
     color: var(--primary-color);
+    /* Conflit avec la ligne 25 link de la nav à corriger */
     text-decoration-line: underline;
 }
 /*** Footer ***/
@@ -210,6 +211,52 @@ a:-webkit-any-link {
         
     }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
+    /*** Section Banner ***/
     
+    .img-banner {
+        height: 200px;
+    }
+    .title-banner {
+        width: 100%;
+        text-align: center;
+        top: 55px;
+        font-weight: 500;
+        font-size: 2em;
+        letter-spacing: .1em;
+    }
+    /*** Section Card ***/
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background: var(--background-collapse);
+        border-radius: 25px;
+        margin: 30px 0;
+        padding: 30px;
+    }
+    .card-content {
+        width: 30%;
+        height: 300px;
+    }
+    .img-card {
+        margin: 0;
+    }
+    .title-card {
+        width: 60%;
+        bottom: 50px;
+    }
+    /*** Section About ***/
+    .collapse-menu {
+        width: 85%;
+        margin: auto;
+    }
+    /*** Section ErrorPage ***/
+    .error-title {
+        font-size: 250px;
+    }
+    .error-text {
+        font-size: 2em;
+    }
 }

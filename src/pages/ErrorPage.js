@@ -9,7 +9,7 @@ export const Error = () => {
                     Oups! La page que vous demandez n'existe pas.
                 </p>
             </div>
-            <Link href="/" className="error-link">
+            <Link to="/" className="error-link">
                 Retourner sur la page d'accueil
             </Link>
         </div>

@@ -8,7 +8,7 @@ export const Card = () => {
     }));
 
     return (
-        <div>
+        <div className="main-container">
         {data.map((item, index) => (
             <div key={index} className="card-content">
                 <img src={item.cover} alt={item.title} className="img-card" />
