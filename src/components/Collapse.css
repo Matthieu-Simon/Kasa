@@ -32,3 +32,10 @@
     margin: 0;
     padding: 15px;
 }
+
+@media screen and (min-width: 1024px) {
+    .collapse-content {
+        width: 80%;
+        margin: auto;
+    }
+}

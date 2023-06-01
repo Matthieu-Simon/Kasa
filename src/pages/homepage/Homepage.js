@@ -13,9 +13,11 @@ export const Home = () => {
     return (
         <div className="homepage-content">
             <Banner />
-        {data.map((house) => (
-            <Card key={house.id} house={house} />
-        ))}
+            <div className="main-container">
+            {data.map((house) => (
+                <Card key={house.id} house={house} />
+            ))}
+            </div>
         </div>
     )
 };

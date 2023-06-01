@@ -8,10 +8,25 @@
     height: 255px;
     border-radius: 10px;
     margin: 15px 0;
+    object-fit: cover;
 }
 .title-card {
     position: absolute;
     bottom: 20px;
     left: 15px;
     width: 90%;
+}
+
+@media screen and (min-width: 1024px) {
+    .card-content {
+        width: 30%;
+        height: 300px;
+    }
+    /* .img-card {
+        margin: 0;
+    } */
+    .title-card {
+        width: 70%;
+        bottom: 30px;
+    }
 }
