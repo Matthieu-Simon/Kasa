@@ -8,7 +8,7 @@ export const Home = () => {
         id: item.id,
         title: item.title,
         cover: item.cover,
-}));
+    }));
 
     return (
         <div className="homepage-content">

@@ -1,7 +1,8 @@
-import './ErrorPage.css';
+import './NotFound.css';
 import { Link } from 'react-router-dom';
 
-export const Error = () => {
+export const NotFound = () => {
+
     return (
         <div className="error-content">
             <div className="error-header">

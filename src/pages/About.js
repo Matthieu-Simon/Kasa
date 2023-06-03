@@ -1,12 +1,24 @@
 import './About.css';
-import { Collapse } from "../components/Collapse";
+import aboutData from '../data/textAbout.json';
+import { Dropdown } from "../components/Dropdown";
 import { Banner } from "../components/Banner";
 
 export const About = () => {
+    const data = aboutData.map(item => ({
+        id: item.id,
+        title: item.title,
+        description: item.description,
+    }));
+
+
     return (
-        <div>
+        <div className="about-content">
             <Banner />
-            <Collapse />
+            <div className="collapse-content">
+            {data.map((content) => (
+                <Dropdown key={content.id} content={content} />
+            ))}
+            </div>
         </div>
     )
 };

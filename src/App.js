@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Home } from './pages/homepage/Homepage';
 import { About } from './pages/About';
-import { Error } from './pages/ErrorPage';
+import { NotFound } from './components/NotFound';
 import { Footer } from "./components/Footer";
 
 function App() {
@@ -13,7 +13,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/404" element={<Error />} />
+
+
+        <Route path="/404" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
