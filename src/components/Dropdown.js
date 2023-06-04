@@ -1,9 +1,6 @@
-// import flecheTop from '../medias/images/Fleche/VectorTop.png';
-
-
 import React, { useState } from 'react';
 import './Dropdown.css';
-import flecheBottom from '../medias/images/Fleche/VectorBottom.png';
+import arrow from '../medias/images/Fleche/Vector.png';
 
 export const Dropdown = ({ content }) => {
     const [show, setShow] = useState(false);
@@ -14,7 +11,7 @@ export const Dropdown = ({ content }) => {
 
             <button className="accordion" onClick={() => setShow(!show)}>
                 {content.title}
-                <img className="fleche" src={flecheBottom} alt={content.title} />
+                <img className={show ? 'arrow arrow_up' : 'arrow arrow_down'} src={arrow} alt={content.title} />
             </button>
 
             { show ?
@@ -26,3 +23,4 @@ export const Dropdown = ({ content }) => {
         </div>
     )   
 };
+        

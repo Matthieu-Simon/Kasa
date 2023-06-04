@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Home } from './pages/homepage/Homepage';
+// import { Fiche} from './pages/Logement';
 import { About } from './pages/About';
-import { NotFound } from './components/NotFound';
+import { Error } from './pages/Error';
 import { Footer } from "./components/Footer";
 
 function App() {
@@ -13,9 +14,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        {/* <Route path="/fiche" element={<Fiche />} /> */}
 
-
-        <Route path="/404" element={<NotFound />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>
