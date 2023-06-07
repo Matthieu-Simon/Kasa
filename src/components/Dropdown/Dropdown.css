@@ -1,6 +1,6 @@
 .collapse {
-    width: 90%;
-    margin: 20px auto;
+    margin: 10px auto;
+    padding: 0 20px;
 }
 .accordion, .panel {
     width: 100%;
@@ -25,14 +25,9 @@
     transform: rotate(180deg);
 }
 .panel {
-    height: 200px;
     background: var(--background-collapse);
     color: var(--primary-color);
     margin-bottom: 25px;
-
-    /* max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out; */
 }
 .collapse-text {
     margin: 0;

@@ -1,7 +1,7 @@
 import './About.css';
-import aboutData from '../data/textAbout.json';
-import { Dropdown } from "../components/Dropdown";
-import { Banner } from "../components/Banner";
+import aboutData from '../../data/textAbout.json';
+import { Dropdown } from '../../components/Dropdown/Dropdown';
+import { Banner } from '../../components/Banner/Banner';
 
 export const About = () => {
     const data = aboutData.map(item => ({
@@ -12,13 +12,13 @@ export const About = () => {
 
 
     return (
-        <div className="about-content">
+        <main className="about-content">
             <Banner />
             <div className="collapse-content">
             {data.map((content) => (
                 <Dropdown key={content.id} content={content} />
             ))}
             </div>
-        </div>
+        </main>
     )
 };

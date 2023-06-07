@@ -1,7 +1,7 @@
 import './Homepage.css';
 import jsonData from '../../data/data.json';
-import { Banner } from "../../components/Banner";
-import { Card } from "./components/Card";
+import { Banner } from '../../components/Banner/Banner';
+import { Card } from '../../components/Card/Card';
 
 export const Home = () => {
     const data = jsonData.map(item => ({
@@ -11,13 +11,13 @@ export const Home = () => {
     }));
 
     return (
-        <div className="homepage-content">
+        <main className="homepage-content">
             <Banner />
-            <div className="main-container">
+            <article className="main-container">
             {data.map((house) => (
                 <Card key={house.id} house={house} />
             ))}
-            </div>
-        </div>
+            </article>
+        </main>
     )
 };

@@ -1,0 +1,31 @@
+/*** Section Header ***/
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.header-title {
+    font-size: 2.2em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+.header-title, .link-nav {
+    color: var(--primary-color);
+}
+
+.link-nav {
+    margin-right: .7em;
+    font-size: 12px;
+    text-decoration: none;
+}
+.link-nav:focus {
+    text-decoration: underline;
+}
+
+.kasa-logo-header {
+    width: 22px;
+    margin-right: 5px;
+}

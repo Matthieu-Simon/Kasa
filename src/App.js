@@ -1,10 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Header } from './components/Header';
-import { Home } from './pages/homepage/Homepage';
-// import { Fiche} from './pages/Logement';
-import { About } from './pages/About';
-import { Error } from './pages/Error';
-import { Footer } from "./components/Footer";
+import { Header } from './components/Header/Header';
+import { Home } from './pages/Homepage/Homepage';
+import { Logement } from './pages/Logement/Logement';
+import { About } from './pages/About/About';
+import { Error } from './pages/Error/Error';
+import { Footer } from "./components/Footer/Footer";
+
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/fiche" element={<Fiche />} /> */}
+        <Route path="/logement/:id" element={<Logement />} />
 
         <Route path="*" element={<Error />} />
       </Routes>
