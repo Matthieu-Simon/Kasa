@@ -13,11 +13,13 @@ export const Home = () => {
     return (
         <main className="homepage-content">
             <Banner />
-            <article className="main-container">
+            <main className="main-container">
             {data.map((house) => (
-                <Card key={house.id} house={house} />
+                <>
+                    <Card key={house.id} house={house} />
+                </>
             ))}
-            </article>
+            </main>
         </main>
     )
 };

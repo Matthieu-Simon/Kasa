@@ -8,12 +8,13 @@ export const Card = ({ id, house }) => {
             <Link to={`/logement/${id}`} className="link-card">
 
                 <img src={house.cover} alt={house.title} className="img-card" />
-
-                <div className="card-shadow"></div>
-
                 <h3 className="title-card">{house.title}</h3>
-
             </Link>
+
+            <div className="card-shadow"></div>
+
+            
+            
         </>
     )
 }

@@ -1,7 +1,6 @@
 /* Banner Homepage */
 .banner-content {
     position: relative;
-    padding: 0 20px;
 }
 .img-banner-accueil {
     width: 100%;
@@ -13,12 +12,10 @@
 }
 .title-banner {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 67%;
+    top: 35px;
+    left: 20px;
     margin: 0;
-    padding-right: 40px;
-    width: 60%;
     font-size: 1.5em;
     font-weight: 400;
 }
@@ -33,12 +30,15 @@
     filter: brightness(70%);
 }
 
-@media screen and (min-width: 505px) {
+@media screen and (min-width: 490px) {
     .title-banner {
-        padding-right: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         text-align: center;
     }
 }
+
 @media screen and (min-width: 1024px) {
     .img-banner-accueil {
         height: 150px;

@@ -1,6 +1,6 @@
 .collapse {
     margin: 10px auto;
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 .accordion, .panel {
     width: 100%;

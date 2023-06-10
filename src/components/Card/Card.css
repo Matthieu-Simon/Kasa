@@ -6,10 +6,24 @@
     object-fit: cover;
 }
 .link-card {
+    position: relative;
     color: #FFF;
+    margin-bottom: 20px;
+}
+.title-card {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    width: 50%;
+    /* color: red; */
 }
 .card-shadow {
+    /* position: absolute;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    width: fit-content;
+    height: 255px;
+    border-radius: 10px; */
 }
 
 @media screen and (min-width: 1024px) {
