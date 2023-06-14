@@ -27,3 +27,9 @@ body {
     font-weight: 500;
     font-size: 14px;
 }
+
+a {
+    color: #FF6060;
+    margin-right: 0.6em;
+    font-size: 12px;
+}

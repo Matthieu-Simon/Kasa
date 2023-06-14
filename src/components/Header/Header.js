@@ -9,12 +9,12 @@ export const Header = () => {
         <header className="header-content">
 
         
-            <Link to="/" className={`header-title ${location.pathname === '/' ? 'active' : ''}`}><span>K</span><img src={logoHeader} alt="Logo Kasa" className="kasa-logo-header" /><span>sa</span></Link>
+            <Link to="/" className="header-title"><span>K</span><img src={logoHeader} alt="Logo Kasa" className="kasa-logo-header" /><span>sa</span></Link>
 
 
             <nav className="navigation">
-                <Link to="/" className={`link-nav ${location.pathname === '/' ? 'active' : ''}`}>Accueil</Link>
-                <Link to="/about" className={`link-nav ${location.pathname === '/about' ? 'active' : ''}`}>A Propos</Link>
+                <Link to="/" className={location.pathname === '/' ? 'link-nav:active' : 'link-nav'}>Accueil</Link>
+                <Link to="/about" className={location.pathname === '/about' ? 'link-nav:active' : 'link-nav'}>A Propos</Link>
             </nav>
 
 

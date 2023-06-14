@@ -10,22 +10,31 @@
     font-weight: 700;
     letter-spacing: 3px;
     text-decoration: none;
+    color: #FF6060;
 }
-
-.header-title, .link-nav {
-    color: var(--primary-color);
-}
-
 .link-nav {
-    margin-right: .7em;
-    font-size: 12px;
     text-decoration: none;
-}
-.link-nav:focus {
-    text-decoration: underline;
 }
 
 .kasa-logo-header {
     width: 22px;
     margin-right: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    .header-content {
+        padding: 25px 20px;
+    }
+    .header-title {
+        font-size: 3em;
+        font-weight: 500;
+    }
+    .navigation {
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .link-nav {
+        font-size: 1em;
+    }
 }

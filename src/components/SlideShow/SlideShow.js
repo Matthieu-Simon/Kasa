@@ -1,6 +1,7 @@
 import "./SlideShow.css";
-// import ArrowLeft from "../medias/images/Fleche/ArrowLeft.png";
-// import ArrowRight from "../medias/images/Fleche/ArrowRight.png";
+// import ArrowLeft from "./images/ArrowLeft.png";
+// import ArrowRight from "./images/ArrowRight.png";
+import jsonData from '../../data/data.json';
 
 
 
@@ -8,9 +9,12 @@ export const SlideShow = () => {
 
 
 
+    
     return (
 
         <div className="slideShow-content">
+                
+                
             
         </div>
        
