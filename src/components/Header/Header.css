@@ -12,8 +12,12 @@
     text-decoration: none;
     color: #FF6060;
 }
+
 .link-nav {
     text-decoration: none;
+}
+.accueil {
+    margin-right: 10px;
 }
 
 .kasa-logo-header {

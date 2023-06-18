@@ -1,11 +1,11 @@
 import './Tags.css';
 import '../../data/data.json';
 
-export const Tags = ({ house }) => {
+export const Tags = () => {
 
     return (
         <div className="tag-content">
-            <button className="tag">{house.tags}</button>
+    
         </div>
     )
 };

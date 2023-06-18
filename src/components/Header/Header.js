@@ -13,7 +13,7 @@ export const Header = () => {
 
 
             <nav className="navigation">
-                <Link to="/" className={location.pathname === '/' ? 'link-nav:active' : 'link-nav'}>Accueil</Link>
+                <Link to="/" className={location.pathname === '/' ? 'link-nav:active accueil' : 'link-nav accueil'}>Accueil</Link>
                 <Link to="/about" className={location.pathname === '/about' ? 'link-nav:active' : 'link-nav'}>A Propos</Link>
             </nav>
 

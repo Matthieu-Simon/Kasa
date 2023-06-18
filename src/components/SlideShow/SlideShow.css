@@ -1,0 +1,34 @@
+.carousel {
+    position: relative;
+}
+.imgCarousel {
+    display: none;
+}
+.imgCarouselActive {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.arrowSlide {
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    background: red;
+}
+.arrowSlideLeft {
+    left: 10px;
+}
+.arrowSlideRight {
+    right: 10px;
+}
+.slideCount{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
