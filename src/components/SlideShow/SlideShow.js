@@ -6,6 +6,7 @@ import { useState } from "react";
 export const SlideShow = ({ images }) => {
     let [pictures, setPictures] = useState(0);
     let listImg = images.length;
+    // console.log(listImg);
 
     const imgPrecedente = () => {
         if(pictures === 0) {
@@ -29,28 +30,25 @@ export const SlideShow = ({ images }) => {
         <div className="carousel">
             <>
             {
-                listImg > 1 && <img className="arrowSlide arrowSlideLeft" src={ArrowLeft} alt="Précedént" onClick={imgPrecedente}/>
+                listImg > 1 && <img className="arrow-slide arrow-slide-left" src={ArrowLeft} alt="Précedént" onClick={imgPrecedente}/>
             }
             {
                 images.map((image, index) => {
                     return(
                         <img 
                         key={index} 
-                        className={index === pictures ? 'imgCarouselActive' : 'imgCarousel'} 
+                        className={index === pictures ? 'img-carousel-active' : 'img-carousel'} 
                         src={image} 
                         alt="Logement"/>
                     )
                 })
             }
             {
-                listImg > 1 && <img className="arrowSlide arrowSlideRight" src={ArrowRight} alt="Suivant" onClick={imgSuivante}/>
+                listImg > 1 && <img className="arrow-slide arrow-slide-right" src={ArrowRight} alt="Suivant" onClick={imgSuivante}/>
             }
             </>
-            <p className='slideCount'>{pictures + 1} / {listImg}</p>
+            <p className='slide-count'>{pictures + 1} / {listImg}</p>
         </div>
     );
-
-    
-
 };
 

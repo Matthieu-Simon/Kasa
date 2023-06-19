@@ -1,11 +1,10 @@
 import './Tags.css';
-import '../../data/data.json';
 
-export const Tags = () => {
+export const Tags = ({ tag }) => {
 
     return (
-        <div className="tag-content">
-    
+        <div className="tags">
+            <span className="tags-title">{tag}</span>
         </div>
     )
 };

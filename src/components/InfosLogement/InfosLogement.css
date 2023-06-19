@@ -1,0 +1,14 @@
+.information-logement {
+    display: flex;
+    flex-direction: column;
+    color: #FF6060;
+    padding: 10px 0;
+    font-weight: 400;
+}
+.title-logement {
+    font-size: 17px;
+}
+.location-logement {
+    padding-top: 5px;
+    font-size: 14px;
+}

@@ -1,16 +1,17 @@
 .carousel {
     position: relative;
 }
-.imgCarousel {
+.img-carousel {
     display: none;
 }
-.imgCarouselActive {
+.img-carousel-active {
     display: block;
     width: 100%;
     height: 250px;
     object-fit: cover;
+    border-radius: 15px;
 }
-.arrowSlide {
+.arrow-slide {
     position: absolute;
     width: 20px;
     height: 25px;
@@ -18,15 +19,14 @@
     transform: translateY(-50%);
     z-index: 1;
     cursor: pointer;
-    background: red;
 }
-.arrowSlideLeft {
+.arrow-slide-left {
     left: 10px;
 }
-.arrowSlideRight {
+.arrow-slide-right {
     right: 10px;
 }
-.slideCount{
+.slide-count{
     position: absolute;
     bottom: 5px;
     left: 50%;
