@@ -1,12 +1,25 @@
 import "./SlideShow.css";
 import ArrowLeft from "./images/ArrowLeft.png";
 import ArrowRight from "./images/ArrowRight.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const SlideShow = ({ images }) => {
     let [pictures, setPictures] = useState(0);
     let listImg = images.length;
-    // console.log(listImg);
+    
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+          setIsDesktop(window.innerWidth >= 768);
+        };
+    
+        window.addEventListener('resize', handleResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
 
     const imgPrecedente = () => {
         if(pictures === 0) {
@@ -47,7 +60,9 @@ export const SlideShow = ({ images }) => {
                 listImg > 1 && <img className="arrow-slide arrow-slide-right" src={ArrowRight} alt="Suivant" onClick={imgSuivante}/>
             }
             </>
-            <p className='slide-count'>{pictures + 1} / {listImg}</p>
+            { isDesktop && (
+                <p className='slide-count'>{pictures + 1} / {listImg}</p>
+            )}
         </div>
     );
 };

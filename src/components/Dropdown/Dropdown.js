@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Dropdown.css';
 import arrow from './images/Vector.png';
 
-export const Dropdown = ({ content }) => {
+export const Dropdown = ({ title, content }) => {
     const [show, setShow] = useState(false);
     
     return (
@@ -17,7 +17,7 @@ export const Dropdown = ({ content }) => {
             <div className="panel">
                 <p className="collapse-text">{content.description}</p>
             </div>
-            : null}
+            : null} */
             
         </div>
     )   

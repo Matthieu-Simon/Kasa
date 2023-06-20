@@ -7,7 +7,7 @@
 }
 .header-title {
     font-size: 2.2em;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 3px;
     text-decoration: none;
     color: #FF6060;
@@ -21,7 +21,7 @@
 }
 
 .kasa-logo-header {
-    width: 22px;
+    height: 18px;
     margin-right: 5px;
 }
 
@@ -40,5 +40,8 @@
     }
     .link-nav {
         font-size: 1em;
+    }
+    .kasa-logo-header {
+        height: 25px;
     }
 }
