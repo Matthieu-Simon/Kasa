@@ -18,23 +18,34 @@ export const Logement = () => {
         filesLogement ? (
             <div className="fiche-description">
                 <SlideShow images={filesLogement.pictures} />
-                <InfosLogement />
-                <div className="tags-content">
-                {filesLogement.tags.map((tags, index) => (
-                    <Tags key={index} tag={tags} />
-                ))}
-                </div>
-                <div className="profile">
-                <Ratings />
-                <Profile
-                    hostName={filesLogement.host.name}
-                    picture={filesLogement.host.picture}
-                />
-                </div>
+                
+                    <main className="main-content-logement">
+                        <div>
+                            <InfosLogement />
+                            <div className="tags-content">
+                            {filesLogement.tags.map((tags, index) => (
+                                <Tags key={index} tag={tags} />
+                            ))}
+                            </div>
+                        </div>
+                    
+                        <div className="profile">
+                            <Ratings />
+                            <Profile
+                                hostName={filesLogement.host.name}
+                                picture={filesLogement.host.picture}
+                            />
+                        </div>
+                    </main>
+                
 
                 <div className="description-content">
-                    <Dropdown titre="Description" content={filesLogement.description} />
-                    <Dropdown titre="Équipements" content={filesLogement.equipments} />
+                    <div className="collapse-logement">
+                        <Dropdown titre="Description" content={filesLogement.description} />
+                    </div>
+                    <div className="collapse-logement">
+                        <Dropdown titre="Équipements" content={filesLogement.equipments} />
+                    </div>
                 </div>
 
             </div>

@@ -10,6 +10,7 @@
 .link-card {
     position: relative;
     color: #FFF;
+    font-size: 12px;
 }
 .link-card::after {
     content:"";
@@ -34,6 +35,12 @@
     .link-card {
         width: 30%;
     }
+    /* .link-card::after {
+        width: 30%;
+    }
+    .img-card {
+        width: 50%;
+    } */
     .title-card {
         width: 50%;
         bottom: 15px;

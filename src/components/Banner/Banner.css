@@ -28,6 +28,7 @@
     object-fit: cover;
     border-radius: 10px;
     filter: brightness(70%);
+    margin-bottom: 10px
 }
 
 @media screen and (min-width: 490px) {

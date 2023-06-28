@@ -6,9 +6,18 @@
     font-weight: 400;
 }
 .title-logement {
-    font-size: 17px;
+    font-size: 16px;
 }
 .location-logement {
     padding-top: 5px;
     font-size: 14px;
+}
+
+@media screen and (min-width: 1024px) {
+    .title-logement {
+        font-size: 22px;
+    }
+    .location-logement {
+        font-size: 12px;
+    }
 }

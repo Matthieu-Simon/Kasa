@@ -1,5 +1,5 @@
 .fiche-description {
-    padding: 0 20px;
+    padding: 0 20px 60px;
 }
 .profile {
     display: flex;
@@ -8,6 +8,25 @@
     align-items: center;
     padding: 10px 0;
 }
+
+@media screen and (min-width: 1024px) {
+    .fiche-description {
+        padding: 0 50px 120px;
+    }
+    .main-content-logement {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+    .description-content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .collapse-logement {
+        width: 47%;
+    }
+}
+
 
 
 

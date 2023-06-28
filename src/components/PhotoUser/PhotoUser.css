@@ -13,3 +13,15 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+@media screen and (min-width: 1024px) {
+    .profile {
+        flex-direction: column-reverse;
+    }
+    .information-user {
+        justify-content: center;
+    }
+    .name-user {
+        width: 45%;
+    }
+} 

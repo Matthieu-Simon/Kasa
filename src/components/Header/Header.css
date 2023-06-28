@@ -12,14 +12,15 @@
     text-decoration: none;
     color: #FF6060;
 }
-
+.navigation {
+    font-size: 12px;
+}
 .link-nav {
     text-decoration: none;
 }
 .accueil {
     margin-right: 10px;
 }
-
 .kasa-logo-header {
     height: 18px;
     margin-right: 5px;
@@ -27,7 +28,7 @@
 
 @media screen and (min-width: 1024px) {
     .header-content {
-        padding: 25px 20px;
+        padding: 25px 50px;
     }
     .header-title {
         font-size: 3em;
@@ -36,9 +37,8 @@
     .navigation {
         width: 15%;
         display: flex;
-        justify-content: space-between;
-    }
-    .link-nav {
+        justify-content: space-around;
+        font-weight: 400;
         font-size: 1em;
     }
     .kasa-logo-header {
