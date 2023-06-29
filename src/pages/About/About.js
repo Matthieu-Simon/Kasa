@@ -16,7 +16,7 @@ export const About = () => {
             <Banner />
             <div className="collapse-desktop">
             {data.map((content) => (
-                <Dropdown key={content.id} content={content} />
+                <Dropdown title={content.title} content={content.description} />
             ))}
             </div>
         </main>

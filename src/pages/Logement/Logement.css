@@ -1,5 +1,6 @@
 .fiche-description {
-    padding: 0 20px 100px;
+    padding: 0 20px 110px;
+    min-height: 530px;
 }
 .profile {
     display: flex;
@@ -11,7 +12,8 @@
 
 @media screen and (min-width: 1024px) {
     .fiche-description {
-        padding: 0 50px 140px;
+        padding: 0 50px 150px;
+        min-height: 550px;
     }
     .main-content-logement {
         display: flex;

@@ -25,7 +25,24 @@
     color: var(--primary-color);
     margin-bottom: 25px;
 }
+.collapse-content {
+    padding-bottom: 12px;
+}
+.collapse-text, .list-equipements {
+    font-weight: 400;
+}
 .collapse-text {
     margin: 0;
     padding: 15px;
+}
+.list-equipements {
+    list-style-type: none;
+    padding: 5px 15px;
+    margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .collapse-text, .list-equipements {
+        padding-bottom: 20px;
+    }
 }
