@@ -15,8 +15,8 @@ export const About = () => {
         <main className="about-content">
             <Banner />
             <div className="collapse-desktop">
-            {data.map((content) => (
-                <Dropdown title={content.title} content={content.description} />
+            {data.map((content, index) => (
+                <Dropdown key={index} title={content.title} content={content.description} />
             ))}
             </div>
         </main>
