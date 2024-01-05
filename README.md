@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Projet n°8 - Kasa - Parcours Intégrateur Web OpenClassRooms
+
+- Réalisation d'un site responsive du style AirBnb en ReactJS
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
